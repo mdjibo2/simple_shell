@@ -54,7 +54,7 @@ char *_getline(void)
 		if (position >= bufSize)
 		{
 			bufSize += READ_BUF;
-			buffer = _ralloc(buffer, READ_BUF, bufSize);
+			buffer = _realloc(buffer, READ_BUF, bufSize);
 
 			if (!buffer)
 			{
