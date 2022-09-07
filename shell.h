@@ -45,6 +45,7 @@ char **tokenize(char *, const char *);
 void shell_execute(char **, int);
 int check_command(char *);
 void execute(char **, int);
+char *_getenv(char *input, char **environ);
 
 /* shell helper function */
 int print(char *, int);
@@ -53,12 +54,15 @@ void (*get_func(char *))(char **);
 /* shell string functions */
 int _strlen(char *);
 int _strcmp(char*, char *);
+char *_strtok(char *str, char *delim);
+char *_strchr(char *s, char c);
+int _strcspn(char *string, char *chars);
 
 /* shell memory management */
 void *_realloc(void *, int, int);
 
 
-/* environment path */
-char *_getenv(char *);
+/* environment path 
+char *_getenv(char *);*/
 
 #endif /* SHELL_H */
