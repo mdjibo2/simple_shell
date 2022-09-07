@@ -18,7 +18,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 	{
 		counter++;
 		if (isatty(STDIN_FILENO))
-			PRINTER("$ ");
+			PRINTER("($) ");
 		line = _getline();
 		if (line[0] == '\0')
 		{
