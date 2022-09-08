@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * signal_to_handel - Handle ^C
+ * signal_to_handle - Handle ^C
  * @sig:Captured Signal
  * Return: Void
  */
